@@ -16,10 +16,15 @@ const AreaCard = styled.div`
     align-items: flex-start;
 `
 
-const Icon = styled.div`
+const IconStyle = styled.div`
+    width: 63.5px;
+    height: 40px;
+    background-position: center;
+    background-repeat: no-repeat;
+`
+
+const Icon = styled(IconStyle)`
     background-image: url(${props => props.src});
-    width: 50px;
-    height: 50px;
 `
 
 export { AreaCard, Icon };

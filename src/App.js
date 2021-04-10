@@ -2,10 +2,8 @@ import React, { Component } from 'react';
 import { Card } from './Components/index';
 import './style.css';
 import iconSedans from './image/icon-sedans.svg';
-
-/**
- * Tentando definir imagem
- */
+import iconSuvs from './image/icon-suvs.svg';
+import iconLuxury from './image/icon-luxury.svg';
 
 class App extends Component {
   render() {
@@ -25,6 +23,7 @@ class App extends Component {
           borderTopRightRadius={false}
           borderBottomLeftRadius={false}
           borderBottomRightRadius={false}
+          imageSet={iconSuvs}
           />
         <Card
           backgroundColor="hsl(179, 100%, 13%)"
@@ -32,6 +31,7 @@ class App extends Component {
           borderTopRightRadius={true}
           borderBottomLeftRadius={false}
           borderBottomRightRadius={true}
+          imageSet={iconLuxury}
           />
       </main>
     );
