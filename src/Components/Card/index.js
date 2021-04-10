@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { AreaCard, ImageCard } from './styles';
+import { AreaCard, Icon } from './styles';
+
 
 class Card extends Component {
     render() {
@@ -11,9 +12,7 @@ class Card extends Component {
                 borderBottomLeftRadius={this.props.borderBottomLeftRadius}
                 borderBottomRightRadius={this.props.borderBottomRightRadius}
             >
-                <ImageCard
-                    imageSet={this.props.imageSet}
-                />
+                <Icon src={this.props.imageSet}/>
             </AreaCard>
         );
     }

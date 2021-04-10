@@ -16,10 +16,10 @@ const AreaCard = styled.div`
     align-items: flex-start;
 `
 
-const ImageCard = styled.image`
-    src: ${props => props.imageSet};
+const Icon = styled.div`
+    background-image: url(${props => props.src});
     width: 50px;
     height: 50px;
 `
 
-export { AreaCard, ImageCard };
+export { AreaCard, Icon };

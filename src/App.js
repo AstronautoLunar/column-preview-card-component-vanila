@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Card } from './Components/index';
 import './style.css';
+import iconSedans from './image/icon-sedans.svg';
 
 /**
  * Tentando definir imagem
@@ -16,7 +17,7 @@ class App extends Component {
           borderTopRightRadius={false}
           borderBottomLeftRadius={true}
           borderBottomRightRadius={false}
-          imageSet={'../../../public/icon-sedans.svg'}
+          imageSet={iconSedans}
           />
         <Card
           backgroundColor="hsl(184, 100%, 22%)"
