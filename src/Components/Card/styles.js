@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
 const AreaCard = styled.div`
-    width: 225px;
-    height: 350px;
+    width: 265px;
+    height: 440px;
     background-color: ${props => props.backgroundColor};
     border-top-left-radius: ${props => props.borderTopLeftRadius ? "10px" : "0px"};
     border-bottom-left-radius: ${props => props.borderBottomLeftRadius ? "10px" : "0px"};
@@ -21,10 +21,51 @@ const IconStyle = styled.div`
     height: 40px;
     background-position: center;
     background-repeat: no-repeat;
+    margin-left: 20px;
 `
 
 const Icon = styled(IconStyle)`
     background-image: url(${props => props.src});
 `
 
-export { AreaCard, Icon };
+const TitleCard = styled.h1`
+    color: white;
+    font-size: 40px;
+    font-family: 'Big Shoulders Display', cursive;
+    margin: 20px;
+`
+
+const DescriptionCard = styled.p`
+    color: white;
+    font-size: 15px;
+    font-family: 'Lexend Deca', sans-serif;
+    margin-left: 20px;
+    margin-bottom: 100px;
+`
+
+const ButtonCard = styled.button`
+    border-radius: 20px;
+    border: 2px solid white;
+    outline: 0 0;
+    box-shadow: 0 0 0 0 white;
+    color: ${props => props.color};
+    background-color: white;
+    padding: 10px;
+    width: 125px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    transition: all 0.2s;
+    &:hover {
+        background-color: rgba(255, 255, 255, 0);
+        color: white;
+    }
+`
+
+export { 
+    AreaCard, 
+    Icon, 
+    TitleCard, 
+    DescriptionCard, 
+    ButtonCard
+};

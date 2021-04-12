@@ -1,5 +1,11 @@
 import React, { Component } from 'react';
-import { AreaCard, Icon } from './styles';
+import { 
+    AreaCard,
+    Icon,
+    TitleCard,
+    DescriptionCard,
+    ButtonCard
+} from './styles';
 
 
 class Card extends Component {
@@ -13,6 +19,13 @@ class Card extends Component {
                 borderBottomRightRadius={this.props.borderBottomRightRadius}
             >
                 <Icon src={this.props.imageSet}/>
+                <TitleCard>{this.props.title}</TitleCard>
+                <DescriptionCard>
+                    {this.props.description}
+                </DescriptionCard>
+                <ButtonCard
+                    color={this.props.color}
+                >Learn More</ButtonCard>
             </AreaCard>
         );
     }

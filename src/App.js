@@ -16,6 +16,9 @@ class App extends Component {
           borderBottomLeftRadius={true}
           borderBottomRightRadius={false}
           imageSet={iconSedans}
+          title="SEDANS"
+          description="Choose a sedan for its affordability and excellent fuel economy. Ideal for cruising in the city ar on your next road trip."
+          color="hsl(31, 77%, 52%)"
           />
         <Card
           backgroundColor="hsl(184, 100%, 22%)"
@@ -24,6 +27,9 @@ class App extends Component {
           borderBottomLeftRadius={false}
           borderBottomRightRadius={false}
           imageSet={iconSuvs}
+          title="SUVS"
+          description="Take an SUV for its spacious interior, power, and versatility. Perfect for your next family vocation and off road adventures."
+          color="hsl(184, 100%, 22%)"
           />
         <Card
           backgroundColor="hsl(179, 100%, 13%)"
@@ -32,6 +38,9 @@ class App extends Component {
           borderBottomLeftRadius={false}
           borderBottomRightRadius={true}
           imageSet={iconLuxury}
+          title="LUXURY"
+          description="Cruise in the best car brands without the boated prices. Enjoy the enhanced confort of a luxury rental and arrive in style."
+          color="hsl(179, 100%, 13%)"
           />
       </main>
     );
