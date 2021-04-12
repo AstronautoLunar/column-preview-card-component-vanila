@@ -6,15 +6,49 @@ import iconSuvs from './image/icon-suvs.svg';
 import iconLuxury from './image/icon-luxury.svg';
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      card: [
+        {
+          borderTopLeftRadius: true,
+          borderTopRighRadius: false,
+          borderBottomLeftRadius: true,
+          borderBottomRightRadius: false,
+        },
+        {
+          borderTopLeftRadius: false,
+          borderTopRighRadius: false,
+          borderBottomLeftRadius: false,
+          borderBottomRightRadius: false,
+        },
+        {
+          borderTopLeftRadius: false,
+          borderTopRighRadius: true,
+          borderBottomLeftRadius: false,
+          borderBottomRightRadius: true,
+        },
+        
+      ]
+    }
+  }
+  mudarRadius() {
+    if(mediaQuerieList) {
+      this.setState()
+    }
+  }
+  componentDidMount() {
+    
+  }
   render() {
     return (
       <main>
         <Card
           backgroundColor="hsl(31, 77%, 52%)"
-          borderTopLeftRadius={true}
-          borderTopRightRadius={false}
-          borderBottomLeftRadius={true}
-          borderBottomRightRadius={false}
+          borderTopLeftRadius={this.state.card[0].borderTopLeftRadius}
+          borderTopRightRadius={this.state.card[0].borderTopRighRadius}
+          borderBottomLeftRadius={this.state.card[0].borderBottomLeftRadius}
+          borderBottomRightRadius={this.state.card[0].borderBottomRightRadius}
           imageSet={iconSedans}
           title="SEDANS"
           description="Choose a sedan for its affordability and excellent fuel economy. Ideal for cruising in the city ar on your next road trip."
@@ -22,10 +56,10 @@ class App extends Component {
           />
         <Card
           backgroundColor="hsl(184, 100%, 22%)"
-          borderTopLeftRadius={false}
-          borderTopRightRadius={false}
-          borderBottomLeftRadius={false}
-          borderBottomRightRadius={false}
+          borderTopLeftRadius={this.state.card[1].borderTopLeftRadius}
+          borderTopRightRadius={this.state.card[1].borderTopRighRadius}
+          borderBottomLeftRadius={this.state.card[1].borderBottomLeftRadius}
+          borderBottomRightRadius={this.state.card[1].borderBottomRightRadius}
           imageSet={iconSuvs}
           title="SUVS"
           description="Take an SUV for its spacious interior, power, and versatility. Perfect for your next family vocation and off road adventures."
@@ -46,5 +80,7 @@ class App extends Component {
     );
   }
 }
+
+const mediaQuerieList = matchMedia("(max-width: 791)");
 
 export default App;
