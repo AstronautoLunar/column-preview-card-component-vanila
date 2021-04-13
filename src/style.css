@@ -10,3 +10,49 @@ main {
     flex-wrap: wrap;
     margin-top: 120px;
 }
+
+div#card1 {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+div#card3 {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+@media screen and (max-width: 793px) {
+    div#card2 {
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+
+    div#card3 {
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+}
+
+@media screen and (max-width: 527px) {
+    div#card1 {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+
+    div#card2 {
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+
+    div#card3 {
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+}
